@@ -9,20 +9,24 @@
 </head>
 <body class="container mt-5">
     <div class="alert alert-info display-1 text-center">
-        <img src="{% static 'imagenes/chile.png' %}" width="100px" alt="">
+        <img src="{% static imagen %}" width="100px" alt="">
         App 02
     </div>
     
     <div class="row">
-        <div class="col"><a href="/Chile" class="btn p-3 btn-info w-100">Chile</a></div>
-        <div class="col"><a href="/Brasil" class="btn p-3 btn-success w-100">Brasil</a></div>
-        <div class="col"><a href="/Peru" class="btn p-3 btn-warning w-100">Peru</a></div>
-        <div class="col"><a href="/EEUU" class="btn p-3 btn-warning w-100">EE.UU</a></div>
+        <div class="col"><a href="/Chile" id="boton1" class="btn p-3 btn-info w-100">Chile</a></div>
+        <div class="col"><a href="/Brasil" id="boton2" class="btn p-3 btn-success w-100">Brasil</a></div>
+        <div class="col"><a href="/Peru" id="boton3" class="btn p-3 btn-warning w-100">Peru</a></div>
+        <div class="col"><a href="/EEUU" id="boton4" class="btn p-3 btn-warning w-100">EE.UU</a></div>
     </div>
 
     <div class="col"  style="margin-top: 10rem;">
         <a href="#" class="btn p-3 btn-info w-100">
-            <img src="{%static imagen %}" width="100px" alt=""/><br/>{{titulo}}<br/>{{dato01}}<br/>{{dato02}}<br/>{{dato03}}<br/>{{dato04}}
+            <img src="{%static imagen %}" width="100px" alt=""/><br/>{{titulo}}<br/>
+            <h1 style="margin-top: 25px;">{{dato01}}</h1><br/>
+            <h3>{{dato02}}</h3><br/>
+            <h3>{{dato03}}</h3><br/>
+            <h3>{{dato04}}</h3>
 
         </a>
     </div>

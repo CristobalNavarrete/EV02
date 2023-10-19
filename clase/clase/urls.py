@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from App02.views import *
 
 from ProductosApp.views import *
 urlpatterns = [
@@ -24,4 +25,9 @@ path("",index),
 path('juguetes/',juguetes) ,
 path('ropa/', ropa),
 path('electronica/', electronica),
+path('App02/', App02),
+path('Chile/',Chile),
+path('Brasil/',Brasil),
+path('Peru/',Peru),
+path('EEUU/',EEUU),
 ]

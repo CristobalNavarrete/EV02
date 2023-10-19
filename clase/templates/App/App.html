@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+    <div class="alert alert-info display-1 text-center">
+        <img src="{% static 'imagenes/chile.png' %}" width="100px" alt="">
+        App 02
+    </div>
+    
+    <div class="row">
+        <div class="col"><a href="/Chile" class="btn p-3 btn-info w-100">Chile</a></div>
+        <div class="col"><a href="/Brasil" class="btn p-3 btn-success w-100">Brasil</a></div>
+        <div class="col"><a href="/Peru" class="btn p-3 btn-warning w-100">Peru</a></div>
+        <div class="col"><a href="/EEUU" class="btn p-3 btn-warning w-100">EE.UU</a></div>
+    </div>
+
+    <div class="col"  style="margin-top: 10rem;">
+        <a href="#" class="btn p-3 btn-info w-100">
+            <img src="{%static imagen %}" width="100px" alt=""/><br/>{{titulo}}<br/>{{dato01}}<br/>{{dato02}}<br/>{{dato03}}<br/>{{dato04}}
+
+        </a>
+    </div>
+</div>
+
+
+    
+
+    
+    
+</body>
+</html>
